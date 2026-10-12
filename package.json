@@ -1,0 +1,25 @@
+{
+  "name": "@graphowl/sdk",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "description": "Push entities, relationships and claims into GraphOWL from anything you can write TypeScript against.",
+  "main": "src/index.ts",
+  "scripts": {
+    "generate": "openapi-typescript openapi.json -o src/generated/api.d.ts",
+    "typecheck": "npm run generate && tsc --noEmit",
+    "test": "npm run generate && vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "openapi-typescript": "^7.13.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.7"
+  },
+  "homepage": "https://graphowl.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphowl/sdk-typescript.git"
+  }
+}
