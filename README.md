@@ -1,4 +1,4 @@
-# GraphOWL ingestion SDK for TypeScript
+# GraphOWL ingestion SDK for TypeScript (`@graphowl/ingest`)
 
 Push entities and relationships into [GraphOWL](https://github.com/graphowl/graphowl) from anything you can write TypeScript against: a script, a worker, a serverless function.
 

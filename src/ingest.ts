@@ -163,7 +163,7 @@ export class GraphOwlError extends Error {
     readonly status: number,
     readonly body: unknown,
   ) {
-    super(`graph-owl responded ${status}: ${JSON.stringify(body)}`);
+    super(`GraphOWL responded ${status}: ${JSON.stringify(body)}`);
   }
 }
 
